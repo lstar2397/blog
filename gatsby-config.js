@@ -5,7 +5,22 @@ const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `Euijin`,
+    // Default title of the page
+    siteTitleAlt: `Euijin.me`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Euijin.me`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://blog.euijin.me`,
+    // Used for SEO
+    siteDescription: `Blog posted about programming, etc...`,
+    // Will be set on the <html /> tag
+    siteLanguage: `ko`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@lstar2397`,
   },
   plugins: [
     {
