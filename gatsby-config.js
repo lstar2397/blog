@@ -56,14 +56,10 @@ module.exports = {
       },
     },
     googleAnalyticsTrackingId && {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingIds: [
-          process.env.GOOGLE_ANALYTICS_ID
-        ],
-        gtagConfig: {
-          anonymize_ip: true
-        }
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        anonymize: true
       },
     },
     `gatsby-plugin-sitemap`,
